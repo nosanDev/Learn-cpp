@@ -10,6 +10,7 @@
                 "-g",
                 "${workspaceFolder}/main.cpp",  
                 "${workspaceFolder}/src/calcul.cpp", 
+                "${workspaceFolder}/src/hangman.cpp", 
                 "-I",
                 "${workspaceFolder}/include", 
                 "-o",

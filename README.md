@@ -10,9 +10,9 @@ Voici quelques idées de projets que vous pouvez réaliser à mesure que vous pr
 
 Niveau Débutant :
 
-Calculatrice : Créez une simple calculatrice qui peut effectuer des opérations de base comme l'addition, la soustraction, la multiplication et la division.
-Jeu de devinettes : Un programme où l'utilisateur doit deviner un nombre aléatoire généré par l'ordinateur.
-Gestionnaire de contacts : Un petit programme pour ajouter, afficher, et supprimer des contacts d'un carnet d'adresses.
+# Calculatrice : Créez une simple calculatrice qui peut effectuer des opérations de base comme l'addition, la soustraction, la multiplication et la division.
+# Jeu de devinettes : Un programme où l'utilisateur doit deviner un nombre aléatoire généré par l'ordinateur.
+
 Niveau Intermédiaire :
 
 Jeu de morpion (Tic-Tac-Toe) : Créez un jeu de morpion où l'utilisateur peut jouer contre l'ordinateur ou un autre joueur.
