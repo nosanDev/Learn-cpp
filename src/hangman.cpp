@@ -64,7 +64,7 @@ void hangman() {
 
     // Annonce du mot à commenter lorsque le developpement du petit jeu sera finit
 
-    std::cout << "Le mot généré est : " << randomWord << std::endl;
+    // std::cout << "Le mot généré est : " << randomWord << std::endl;
 
     // Annonce des règles
 

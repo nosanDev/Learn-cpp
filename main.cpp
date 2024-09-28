@@ -1,6 +1,7 @@
 #include <iostream>
 #include "calcul.h"
 #include "hangman.h"
+#include "bitcoin.h"
 
 using namespace std;
 
@@ -9,7 +10,8 @@ void afficherMenu() {
     cout << "\n\n\n===== Menu Principal =====" << endl;
     cout << "\n1. Calcul" << endl;
     cout << "\n2. Jeu du pendu" << endl;
-    cout << "\n3. Quitter" << endl;
+    cout << "\n3. Jeu de Gestion d'argent (Bitcoin)" << endl;
+    cout << "\n4. Quitter" << endl;
 }
 
 int main() {
@@ -29,6 +31,9 @@ int main() {
                 hangman();
                 break;
             case 3:
+                bitcoin();
+                break;
+            case 4:
                 quitter = true;
                 cout << "Au revoir !" << endl;
                 break;

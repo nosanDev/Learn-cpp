@@ -15,9 +15,9 @@ Niveau Débutant :
 
 Niveau Intermédiaire :
 
-Jeu de morpion (Tic-Tac-Toe) : Créez un jeu de morpion où l'utilisateur peut jouer contre l'ordinateur ou un autre joueur.
+Jeu de gestion d'argent (bitcoin) :
 Gestionnaire de fichiers : Un programme qui permet de créer, lire, écrire, et supprimer des fichiers texte.
-Bibliothèque de livres : Une application qui permet de gérer une collection de livres, avec des fonctionnalités pour ajouter, supprimer et rechercher des livres par auteur ou par titre.
+
 Niveau Avancé :
 
 Jeu de serpent (Snake Game) : Implémentez un jeu de serpent en utilisant une interface graphique (par exemple, avec la bibliothèque SFML).

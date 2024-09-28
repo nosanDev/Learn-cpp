@@ -11,6 +11,7 @@
                 "${workspaceFolder}/main.cpp",  
                 "${workspaceFolder}/src/calcul.cpp", 
                 "${workspaceFolder}/src/hangman.cpp", 
+                "${workspaceFolder}/src/bitcoin.cpp", 
                 "-I",
                 "${workspaceFolder}/include", 
                 "-o",
