@@ -16,7 +16,7 @@ Niveau Débutant :
 Niveau Intermédiaire :
 
 Jeu de gestion d'argent (bitcoin) :
-Gestionnaire de fichiers : Un programme qui permet de créer, lire, écrire, et supprimer des fichiers texte.
+Gestionnaire de ... :
 
 Niveau Avancé :
 
@@ -25,7 +25,13 @@ Compilateur simple : Créez un compilateur simple pour un langage de programmati
 Moteur de jeu 2D : Si vous êtes vraiment motivé, vous pouvez tenter de créer un moteur de jeu 2D, en vous appuyant sur des bibliothèques comme SDL ou SFML.
 
 3. Apprendre les concepts avancés :
+
+En 1 projet :
 Structures de données et algorithmes : Implémentez des structures de données classiques (listes, piles, files d'attente, arbres, graphes) et des algorithmes (tri, recherche).
 Gestion de la mémoire : Comprenez comment le C++ gère la mémoire (pointeurs, allocation dynamique, etc.).
 Programmation orientée objet (POO) : Maîtrisez les concepts de POO en C++ comme l'héritage, le polymorphisme, et l'encapsulation.
 Programmation concurrente : Apprenez à utiliser les threads et les mutex pour gérer la concurrence dans vos applications.
+
+
+
+Prêt pour attaquer le moteur de jeu 3D !!!
