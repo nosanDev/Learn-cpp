@@ -3,6 +3,7 @@
 #include <random>
 #include <chrono>
 #include <thread>
+#include <conio.h>
 
 using namespace std;
 
@@ -10,14 +11,32 @@ bool game = true;
 int Money_EUR = 1500;
 int Money_BTC = 0;
 
-void court_Bitcoin() {
-    float valeur_B = 25000.0f;
+
+// Outils
+
+void pauseIndefinie() {
+    std::cout << "Le programme est en pause. Appuyez sur 'Entrée' pour continuer...\n";
+    std::cin.get();  // Attend une touche 
+}
+
+// Programme
+
+void court_Bitcoin(float& valeur_B) {
+
     int i = 0;
 
     std::default_random_engine generator;
     std::uniform_real_distribution<float> distribution(-3000.0f, 3000.0f); 
 
     while (game) {
+        if (_kbhit()){
+            pauseIndefinie();
+            while (!kbhit) {
+                menu(Money_EUR, Money_BTC, valeur_B);
+            }
+        }
+
+
         float variation = distribution(generator);
         valeur_B += variation; 
 
@@ -48,7 +67,39 @@ void acheter(int money_btc, int money, int valeur_bitcoin) {
 void vendre() {
 }
 
+void menu(int euro, int btc, float valeurBtc) {
+    int action;
+            bool QuitterJour = false;
+            bool Quitter = false;
+                
+            std::cout << R"(Veuillez entrez un nombre correspondant à l'action que vous souhaitez executer :
+            - 1 : Pour acheter une quantité de bitcoin
+            - 2 : Pour vendre une quantité de bitcoin
+            - 3 : Passer
+            - 4 : Pour revenir au menu principal du programme (quitter le jeu)))" << std::endl;
+            cin >> action;
+
+    switch (action) {
+                case 1:
+                    acheter(euro, btc, valeurBtc);
+                    break;
+                case 2:
+                    vendre();
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    game = false;
+                    break;
+                default:
+                    cout << "Choix invalide, veuillez réessayer." << endl;
+
+            }
+}
+
 void bitcoin() {
+
+    float valeur_B = 25000.0f;
 
     bool game = true;
 
@@ -94,59 +145,19 @@ void bitcoin() {
         int valeur_court_BTC = 0;
         
 
-        while (times <= 100) {
-            int action;
-            bool QuitterJour = false;
-            bool Quitter = false;
-                
-            std::cout << R"(Veuillez entrez un nombre correspondant à l'action que vous souhaitez executer :
-            - 1 : Pour acheter une quantité de bitcoin
-            - 2 : Pour vendre une quantité de bitcoin
-            - 3 : Passer
-            - 4 : Pour revenir au menu principal du programme (quitter le jeu)))" << std::endl;
-            cin >> action;
+        while (times <= 4) {
+            
 
 
 
-            switch (action) {
-                case 1:
-                    acheter(Money_EUR, );
-                    break;
-                case 2:
-                    vendre();
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    game = false;
-                    break;
-                default:
-                    cout << "Choix invalide, veuillez réessayer." << endl;
-
-            }
+            menu(Money_EUR, Money_BTC, valeur_B); // affiche le menu au début du jeu
 
             // court du bitcoin
 
             while (game) {
-                court_Bitcoin();
+                court_Bitcoin(valeur_B);
 
-                switch (action) {
-                case 1:
-                    acheter();
-                    break;
-                case 2:
-                    vendre();
-                    break;
-                case 3:
-                    vendre();
-                    break;
-                case 4:
-                    vendre();
-                    break;
-                default:
-                    cout << "Choix invalide, veuillez réessayer." << endl;
-
-            }
+                menu(Money_EUR, Money_BTC, valeur_B);
             }
         }
         
